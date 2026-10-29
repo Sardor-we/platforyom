@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ism Familiya – Dasturchi</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#F2F4F8;--ink:#14213D;--mute:#5B6579;--line:#C9D0DE;--acc:#2B59FF;--hi:#FFE066;--grid:rgba(20,33,61,.07);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10162A;--ink:#EDF0F7;--mute:#9AA5BE;--line:#2C3556;--acc:#7C9CFF;--hi:#FFE066;--grid:rgba(237,240,247,.06)}}
+:root[data-theme="dark"]{--bg:#10162A;--ink:#EDF0F7;--mute:#9AA5BE;--line:#2C3556;--acc:#7C9CFF;--hi:#FFE066;--grid:rgba(237,240,247,.06)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "IBM Plex Sans",system-ui,sans-serif;
+background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:32px 32px}
+main{max-width:880px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.05;margin:0}
+a{color:var(--acc);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.hero{padding:96px 0 72px}
+h1{font-size:clamp(44px,9vw,92px);font-weight:800;letter-spacing:-.03em}
+h1 mark{background:var(--hi);color:#14213D;padding:0 .12em;border-radius:4px}
+.lead{max-width:34em;font-size:20px;color:var(--mute);margin:28px 0 32px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:500;text-decoration:none;border:2px solid var(--ink);color:var(--ink)}
+.btn.main{background:var(--ink);color:var(--bg)}
+section{padding:56px 0;border-top:2px solid var(--ink)}
+h2{font-size:clamp(28px,4vw,40px);font-weight:800;margin-bottom:28px}
+.row{display:grid;grid-template-columns:1fr 2fr;gap:8px 32px;padding:24px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row h3{font-size:24px;font-weight:500}
+.row p{margin:0 0 12px;max-width:34em}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.tags li{font-size:14px;padding:2px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg)}
+.skills{columns:2;gap:32px;max-width:34em}
+.skills p{margin:0 0 14px;break-inside:avoid}
+.skills b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-weight:500}
+.skills span{color:var(--mute)}
+footer{padding:40px 0 64px;color:var(--mute);font-size:15px}
+@media (max-width:640px){.row{grid-template-columns:1fr}.skills{columns:1}.hero{padding-top:56px}}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+<h1>Ism Familiya.<br>Men <mark>kod</mark> yozaman.</h1>
+<p class="lead">Veb-ilovalar va xizmatlar quradigan dasturchiman: interfeysdan tortib serverga qadar. Sodda, tez va ishonchli yechimlarni yoqtiraman.</p>
+<div class="btns"><a class="btn main" href="#loyihalar">Loyihalarni koʻrish</a><a class="btn" href="#aloqa">Bogʻlanish</a></div>
+</header>
+
+<section id="loyihalar">
+<h2>Loyihalar</h2>
+<div class="row"><h3>Buyurtma platformasi</h3><div><p>Kichik restoranlar uchun onlayn buyurtma tizimi. Mijoz menyuni tanlaydi, oshxona buyurtmani real vaqtda koʻradi.</p><ul class="tags"><li>React</li><li>Node.js</li><li>PostgreSQL</li></ul></div></div>
+<div class="row"><h3>Vazifalar boshqaruvchisi</h3><div><p>Jamoalar uchun kanban doska: vazifalarni sudrab oʻtkazish, izohlar va muddat eslatmalari.</p><ul class="tags"><li>TypeScript</li><li>Next.js</li><li>Prisma</li></ul></div></div>
+<div class="row"><h3>Telegram-bot</h3><div><p>Oʻquv markazi uchun bot: roʻyxatdan oʻtish, toʻlov holati va dars jadvali bir joyda.</p><ul class="tags"><li>Python</li><li>aiogram</li><li>Redis</li></ul></div></div>
+</section>
+
+<section>
+<h2>Texnologiyalar</h2>
+<div class="skills">
+<p><b>Frontend</b><span>HTML, CSS, JavaScript, React</span></p>
+<p><b>Backend</b><span>Node.js, Python, REST API</span></p>
+<p><b>Maʼlumotlar bazasi</b><span>PostgreSQL, Redis</span></p>
+<p><b>Vositalar</b><span>Git, Docker, Linux</span></p>
+</div>
+</section>
+
+<section id="aloqa">
+<h2>Birga ishlaymizmi?</h2>
+<p>Yangi loyiha yoki ish taklifi boʻlsa, yozing. Odatda bir kun ichida javob beraman.</p>
+<p><a href="mailto:ism@example.com">ism@example.com</a><br><a href="https://github.com/">github.com/ismfamiliya</a><br><a href="https://t.me/">t.me/ismfamiliya</a></p>
+</section>
+<footer>© 2026 Ism Familiya</footer>
+</main>
+</body>
+</html>
